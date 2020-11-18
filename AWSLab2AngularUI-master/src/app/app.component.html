@@ -11,27 +11,8 @@
   
 </head>
 
-<body style="background: #000;">
- <div class="login">
-	<h1 style="color: darkorchid;">Hosing Price Prediction</h1>
-
-     <!-- Main Input For Receiving Query to our ML -->
-     <form [formGroup]="checkoutForm"  (ngSubmit)="onSubmit(checkoutForm.value)">
-        <input type="text" formControlName="rm" id="rm" placeholder="enter rm value" required="required"/>
-		<input type="text" formControlName="lstat" id="lstat" placeholder="enter lstat value" required="required" />
-
-
-        <button type="submit" class="btn btn-primary btn-block btn-large" >Predict housing price</button>
-    </form>
-
-   <br>
-   <br>
-   <p style="color: black;"> Predicted housing price :
-    {{ jobsOutput }}
-   </p>
-   
-
- </div>
+<body >
+  <iframe src="https://bvcoepros.shinyapps.io/krishna" title="Sentiment Analysis" style="width: 100vw;height: 100vh;"></iframe>
 
 
 </body>
